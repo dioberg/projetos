@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="menu.css">
+    <title>menu lateral</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="abrir-btn" onclick="abrirMen()">&#9776; Abrir</a>
+    </header>
+    <nav id="menu">
+        <a href="#">&times; fechar</a>
+        <a href="#">Home</a>
+        <a href="#">Contato</a>
+        <a href="#">Sobre</a>
+        <a href="#">Youtube</a>
+
+    </nav>
+    <main>
+        <h1>teste de barra latral</h1>
+        <p>barra latral como fazer</p>
+    </main>
+
+    <script>
+        function abrirMenu() {
+           document.getElementById('menu').style.width = '250px';
+        }
+
+        function fecharMenu() {
+           document.getElementById('menu').style.width = '0px';
+        }
+    </script>
+</body>
+</html>
