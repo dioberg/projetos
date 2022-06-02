@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>componentes tabs</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .tab{
+            background-color: rgb(209, 205, 205);
+            border: 1px solid rgb(180, 179, 179);
+            border-bottom: none;
+            border-radius: 5px 5px 0 0 ;
+            overflow: auto;
+        }
+
+        .tab button{
+            background-color: rgb(209, 205, 205);
+            border: none;
+            border-radius: 5px 5px 0 0 ;
+            cursor: pointer;
+            padding: 10px 15px;
+            font-weight: bold;
+            color: #333;
+            margin-top: 3px;
+            float: left;
+        }
+
+
+        .tab button:hover {
+            background-color: #e7e5e5;
+
+        }
+
+        .tab button.ativo{
+            background-color: white;
+            color: blue;
+        }
+
+        .conteudo{
+            border: 1px solid rgb(145, 143, 143);
+            border-top: none;
+            padding:6px 12px ;
+            display: none;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="tab">
+        <button class="ativo">HTML</button>
+        <button>CSS</button>
+        <button>javaCript</button>
+    </div>
+
+    <div class="conteudo">
+        <h3>HTML</h3>
+        <p>
+            HTML é uma linguagem de marcação padrão utilizada no mundo inteiro para desenvolver páginas web. A sigla HTML significa Hypertext Markup Language, que traduzindo para português significa “Linguagem de Marcação de Hipertexto”.
+ 
+        </p>
+    </div>
+
+    <div class="conteudo">
+        <h3>CSS</h3>
+        <p>
+            A sigla CSS significa Cascading Style Sheets, que traduzindo para português significa “folhas de estilo em cascata”. É uma linguagem que complementa a linguagem HTML.
+
+        </p>
+    </div>
+
+    <div class="conteudo">
+        <h3>JavaCript</h3>
+        <p>
+            JavaScript é a linguagem de programação do HTML, com ela você pode programar o comportamento das páginas web.
+        </p>
+    </div>
+</body>
+</html>
