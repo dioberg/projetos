@@ -51,13 +51,13 @@
 
 </head>
 <body>
-    <div class="tab">
-        <button class="ativo">HTML</button>
-        <button>CSS</button>
-        <button>javaCript</button>
+    <div  class="tab">
+        <button id="tabPadrao" class="tab-btn"  onclick="abrirtab(event, 'HTML')">HTML</button>
+        <button class="tab-btn" onclick="abrirtab(event, 'CSS')">CSS</button>
+        <button class="tab-btn" onclick="abrirtab(event, 'JavaScript')">javaCript</button>
     </div>
 
-    <div class="conteudo">
+    <div id="HTML" class="conteudo">
         <h3>HTML</h3>
         <p>
             HTML é uma linguagem de marcação padrão utilizada no mundo inteiro para desenvolver páginas web. A sigla HTML significa Hypertext Markup Language, que traduzindo para português significa “Linguagem de Marcação de Hipertexto”.
@@ -65,7 +65,7 @@
         </p>
     </div>
 
-    <div class="conteudo">
+    <div id="CSS" class="conteudo">
         <h3>CSS</h3>
         <p>
             A sigla CSS significa Cascading Style Sheets, que traduzindo para português significa “folhas de estilo em cascata”. É uma linguagem que complementa a linguagem HTML.
@@ -73,11 +73,32 @@
         </p>
     </div>
 
-    <div class="conteudo">
-        <h3>JavaCript</h3>
+    <div id="JavaScript" class="conteudo">
+        <h3>JavaScript</h3>
         <p>
             JavaScript é a linguagem de programação do HTML, com ela você pode programar o comportamento das páginas web.
         </p>
     </div>
+
+    <script>
+
+        document.getElementById('tabPadrao').click();
+
+        function abrirtab(event, idtab){
+            var conteudos = document.getElementsByClassName('conteudo');
+            for (var i = 0; i < conteudos.length; i++) {
+                conteudos[i].style.display = 'none';
+            }
+
+            var tabs = document.getElementsByClassName('tab-btn');
+            for (var i = 0; i < tabs.length; i++) {
+                tabs[i].className = tabs[i].className.replace('ativo', '');
+            }
+
+           document.getElementById(idtab).style.display = 'block';
+           event.currentTarget.className += ' ativo';
+        }
+    </script>
+
 </body>
 </html>
