@@ -29,9 +29,65 @@
                             <input type="mail" id="txt-email" name="email" placeholder="Informe seu e-mail" maxlength="100" required class="caixa-texto">
                         </div>
 
+                        <div class="col-4">
+                            <label for="txtcelular" class="rotulo">Celular:</label>
+                            <input type="tel" id="txtcelular" name="Celular" placeholder="Informe seu numero" maxlength="12" required class="caixa-texto">
+                        </div>
+
                     </div>
                 </fieldset>   
+            </div>
+            <div class="col-6 col-s-12">
+                <fieldset>
+                    <legend>textArea</legend>
+
+                    <div class="row">
+                        <div class="col-12">
+                            <label for="txtdescricao" class="rotulo">Descrição</label>
+                            <textarea name="descrição" id="txtdescricao"  rows="3" placeholder="digite aqui" class="caixa-texto" maxlength="150"></textarea>
+
+                        </div>
+
+                    </div>
+                </fieldset>
+
             </div>    
+        </div>
+        <div class="row">
+            <div class="col-6 col-s-12">
+                <fieldset>
+                    <legend>chekbox</legend>
+                    <div class="row">
+                        <div class="col-4 col-s-12">
+                            
+                            <label for="checkcarro" class="label-check">
+                                <input type="checkbox" id="checkcarro" name="veiculo1" value="carro"  >
+                                <span class="caixa-check"></span>
+                                Carro
+                            </label>
+                        </div>
+
+                        <div class="col-4 col-s-12">
+                            
+                            <label for="checkmoto" class="label-check">
+                                <input type="checkbox" id="checkmoto" name="veiculo2" value="moto"  >
+                                <span class="caixa-check"></span>
+                                moto
+                            </label>
+                        </div>
+
+                        <div class="col-4 col-s-12">
+                            
+                            <label for="checkbicicleta" class="label-check">
+                                <input type="checkbox" id="checkbicicleta" name="veiculo3" value="bicicleta" checked >
+                                <span class="caixa-check"></span>
+                                bicicleta
+                            </label>
+                        </div>
+                    </div>
+                </fieldset>
+                
+            </div>
         </div>
     </form>
 </body>

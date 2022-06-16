@@ -33,6 +33,7 @@ legend
     background-color: #fafafa;
     font-family: Arial, Helvetica, sans-serif;
     width: 100%;
+    outline: none;
 }
 
 .caixa-texto:hover
@@ -47,3 +48,64 @@ legend
     box-shadow: 0 0 4px rgba(11, 195, 241,0.7);
 }
 
+
+textarea
+{
+   resize: none; 
+}
+
+.label-check input
+{
+    display: none;
+}
+
+.label-check .caixa-check
+{
+    height: 16px;
+    width: 16px;
+    border: 1px solid #d1d1d1;
+    background-color: #fafafa;
+    border-radius: 3px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.label-check
+{
+    position: relative;
+    padding-left: 25px;
+    color: #525252;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.label-check:hover .caixa-check
+{
+    background-color: #fff2;
+} 
+
+.label-check input:checked ~ .caixa-check
+{
+    background-color: #2196f3;
+    border-color: #00aeef;
+}
+
+.label-check .caixa-check::after
+{
+    content: "";
+    width: 4px;
+    height: 8px;
+    border: 1px solid white;
+    position: absolute;
+    border-width: 0 1px 1px 0;
+    transform: rotate(45deg);
+    left: 4.9px;
+    top: 1px;
+    display: none;
+}
+
+.label-check input:checked ~ .caixa-check::after
+{
+    display: block;
+}
