@@ -88,7 +88,73 @@
                 </fieldset>
                 
             </div>
+            <div class="col-6 col-s-12">
+                <fieldset>
+                    <legend>Senhas</legend>
+                    <div class="row">
+                        <div class="col-4 col-s-12">
+                            <label for="txtsenha" class="rotulo">Senha:</label>
+                            <input type="password" id="txtsenha" name="Senha" maxlength="10" minlength="6" placeholder="digite sua senha" required class="caixa-texto">
+
+                        </div>
+                        <div class="col-4 col-s-12">
+                             <div class="caixa-vazio-25"></div>
+
+                            <label for="checkmostrar" class="label-check">
+                                <input type="checkbox" id="checkmostrar" onchange="mostrarSenha()">
+                                <span class="caixa-check"></span>
+                                mostrar Senha
+                            </label>
+
+                        </div>
+
+                    </div>
+                </fieldset>
+
+            </div>
         </div>
+        <div class="row">
+            <div class="col-6 col-s-12">
+                <fieldset>
+                    <legend>Radio Button</legend>
+                    <div class="row">
+                        <div class="col-4 col-s-12">
+                            
+                            <label for="radioCarro" class="label-radio">
+                               
+                                Carro
+                                 <input type="radio" id="radioCarro" name="veiculo" value="carro">
+                                 <span class="bol-radio"></span>
+                            </label>
+
+                        </div>
+
+                        <div class="col-4 col-s-12">
+                           
+                            <label for="radioMoto" class="label-radio"> 
+                                Moto
+                                <input type="radio" id="radioMoto" name="veiculo" value="Moto">
+                                <span class="bol-radio"></span>
+                            </label>
+
+                        </div>
+
+                        <div class="col-4 col-s-12">
+                            
+                            <label for="radioBicicleta" class="label-radio"> 
+                                Bicicleta
+                                <input type="radio" id="radioBicicleta" name="veiculo" value="Bicicleta">
+                                <span class="bol-radio"></span>
+                            </label>
+
+                        </div>
+
+                    </div>
+                </fieldset>
+
+            </div>
+        </div>
+
     </form>
 </body>
 </html>

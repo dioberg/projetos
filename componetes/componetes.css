@@ -78,6 +78,7 @@ textarea
     color: #525252;
     font-size: 16px;
     cursor: pointer;
+    user-select: none;
 }
 
 .label-check:hover .caixa-check
@@ -106,6 +107,73 @@ textarea
 }
 
 .label-check input:checked ~ .caixa-check::after
+{
+    display: block;
+}
+
+
+
+.caixa-vazio-25
+{
+    height: 25px;
+}
+
+
+.label-radio
+{
+    position: relative;
+    cursor: pointer;
+    color: #525252;
+    font-size: 16px;
+    user-select: none;
+    padding-left: 25px;
+
+}
+
+.label-radio input
+{
+    display: none;
+}
+
+.label-radio .bol-radio 
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 16px;
+    width: 16px;
+    border: 1px solid #d1d1d1;
+    background-color: #fafafa;
+    border-radius: 50%;
+
+}
+
+
+.label-radio input:checked ~ .bol-radio
+{
+    background-color: #00aeef;
+    border-color: #0893c7;
+}
+
+.label-radio:hover .bol-radio
+{
+    border-color: #0893c7;
+}
+
+.label-radio .bol-radio::after
+{
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: white;
+    display: none;
+}
+
+.label-radio input:checked ~ .bol-radio::after
 {
     display: block;
 }
