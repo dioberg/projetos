@@ -177,3 +177,35 @@ textarea
 {
     display: block;
 }
+
+.range
+{
+    height: 12px;
+    width: 100%;
+    border: 1px solid #d1d1d1;
+    background-color: #fafafa;
+    border-radius: 7px;
+    appearance: none;
+    margin-top: 8px;
+}
+
+.range::-moz-range-thumb
+{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: 1px solid #0893c7;
+    background-color: #00aeef;
+    cursor: move;
+}
+
+.range::-webkit-slider-thumb
+{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: 1px solid #0893c7;
+    background-color: #00aeef;
+    cursor: move;
+    appearance: none;
+}

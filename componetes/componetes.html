@@ -181,7 +181,28 @@
 
 
         </div>
+        <div class="row">
+            <div class="col-6 col-s-12">
+                <fieldset>
+                    <legend>Números</legend>
+                    <div class="row">
+                        <div class="col-4 col-s-6">
+                            <label for="txtIdade" class="rotulo">Idade:</label>
+                            <input type="number" id="txtIdade" name="idade" class="caixa-texto" placeholder="Idade" required min="0" max="50">
+                        </div>
+                        <div class="col-4 col-s-6">
+                            <label for="txtvolume" class="rotulo">Volume:  <output id="outvolume"></output> </label>
+                            <input type="range" id="txtvolume" name="volume" min="0" max="10" oninput="outvolume.value = txtvolume.value" class="range"
+                            >
+                          
+                        </div>
+                    </div>
 
+                </fieldset>
+
+            </div>
+
+        </div>
     </form>
 </body>
 </html>
