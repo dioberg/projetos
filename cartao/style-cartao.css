@@ -1,0 +1,106 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html{
+    --bg-color: #edf2ff;
+    --texto-color: #00082f;
+    --primary-color:#4263eb;
+    --primary-color-dark: #364fc7; 
+}
+
+body.dark-blue{
+    --bg-color: #00082f;
+    --texto-color: #ffffff;
+}
+
+a
+{
+    text-decoration: none;
+
+}
+
+body
+{
+    background: var(--bg-color);
+    font-family: 'Roboto', sans-serif;
+    color: var(--texto-color);
+}
+
+.caixa1
+{
+    
+    text-align: center;
+    width: 300px;
+    margin: 60px auto;
+    padding: 60;
+}
+
+
+img
+{
+    width: 100%;
+}
+
+img
+{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    padding: 3px;
+    border: 3px solid var(--primary-color);
+}
+
+p{
+    font-family: font-family: 'DM Sans', sans-serif;
+   color:
+} 
+
+ul
+{
+    list-style: none;
+    margin: 48px 0;
+   
+}
+
+h1
+{
+    margin-top: 24px;
+    margin-bottom: 8px;
+    font-size: 32px;
+
+}
+
+ul li a
+{
+    display: flex;
+    height: 53px;
+    align-items: center;
+    justify-content: center;
+    background: var(--primary-color);
+    text-transform: uppercase;
+    font-size: 18px;
+    color: white;
+    margin-bottom: 16px;
+    border-radius: 6px;
+
+    transition: background 400ms;
+}
+
+
+ul li a:hover
+{
+    background: var(--primary-color-dark);
+}
+
+footer
+{
+    font-weight: 500;
+    font-size: 12px;
+    color:rgb(61, 60, 60) ;
+    opacity: 0.9;
+}
